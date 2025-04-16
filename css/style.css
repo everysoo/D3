@@ -1,0 +1,7 @@
+.flourish-popup {
+    pointer-events: none;
+}
+
+.flourish-popup td:first-child {
+    font-weight: bold;
+}

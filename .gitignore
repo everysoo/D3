@@ -22,7 +22,7 @@
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-!.vscode/*.code-snippets
+!.vscode/*.code-snsippets
 
 # Local History for Visual Studio Code
 .history/
