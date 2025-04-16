@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>My visualization</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+ 
+<body>
+  <div id="wrapper">
+    <svg width="800" height="1000">
+      <g class="chart">
+      <g class="entrants" />
+      <g class="finishers"/>
+      </g>
+    </svg>
+  </div>
+
+  
+  <!-- ✅ D3.js를 그냥 script 태그로 불러오기 (비모듈 방식) -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  
+  <!-- ✅ index.js 불러오기 -->
+  <script src="js/index.js"></script>
+</body>
+</html>
