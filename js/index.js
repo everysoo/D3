@@ -124,9 +124,31 @@ function updateChart(data) {
     })
 }
 
+function updateYearLabels() {
+    var years = [1900, 1910, 1920, 1930, 1940, 1950, 1960, 1970, 1980, 1990, 2000, 2010];
+    var cellSize = 80;
+    d3.select('svg g.chart .year-labels')
+      .selectAll('text')
+      .data(years)
+      .join('text')
+      .attr('y', function(d, i) {
+        return i * cellSize + 0.5 * cellSize;
+      })
+      .attr('dy', '0.3em')
+      .style('text-anchor', 'end')
+      .style('fill', '#555')
+      .style('font-weight', 'bold')
+      .text(function(d) {
+        return d;
+      });
+  }
+  
+
+
 // 콜백
 function dataIsReady(data) {
   updateChart(data);
+  updateYearLabels();
   popup = Popup();
 }
 
