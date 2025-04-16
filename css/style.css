@@ -1,3 +1,13 @@
+body {
+    font-family: sans-serif;
+    font-size: 12px;
+  }
+  
+#wrapper {
+    margin: 0 auto;
+    width: 800px;
+  }
+
 .flourish-popup {
     pointer-events: none;
 }
